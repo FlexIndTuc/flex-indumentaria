@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Indumentaria Tucumán</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #0a1a2f;
+            color: white;
+        }
+        header {
+            background-color: black;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        nav {
+            background-color: #102a43;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .banner {
+            text-align: center;
+            padding: 50px;
+            background: url('banner.jpg') no-repeat center/cover;
+        }
+        .seccion {
+            padding: 40px;
+            text-align: center;
+        }
+        .productos {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+        .producto {
+            background-color: #1c2e4a;
+            padding: 15px;
+            border-radius: 10px;
+        }
+        .producto img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+        footer {
+            background-color: black;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Flex Indumentaria Tucumán</h1>
+    </header>
+    <nav>
+        <a href="#nuevo">Lo Nuevo</a>
+        <a href="#temporada">Nueva Temporada</a>
+        <a href="#liquidacion">Liquidación</a>
+    </nav>
+    <section id="nuevo" class="seccion">
+        <h2>Lo Nuevo</h2>
+        <div class="productos">
+            <div class="producto">
+                <img src="producto1.jpg" alt="Producto 1">
+                <p>Campera deportiva - $15.000</p>
+            </div>
+            <div class="producto">
+                <img src="producto2.jpg" alt="Producto 2">
+                <p>Remera básica - $5.000</p>
+            </div>
+        </div>
+    </section>
+    <section id="temporada" class="seccion">
+        <h2>Nueva Temporada</h2>
+        <div class="productos">
+            <div class="producto">
+                <img src="producto3.jpg" alt="Producto 3">
+                <p>Pantalón jogging - $12.000</p>
+            </div>
+            <div class="producto">
+                <img src="producto4.jpg" alt="Producto 4">
+                <p>Buzo oversize - $18.000</p>
+            </div>
+        </div>
+    </section>
+    <section id="liquidacion" class="seccion">
+        <h2>Liquidación</h2>
+        <div class="productos">
+            <div class="producto">
+                <img src="producto5.jpg" alt="Producto 5">
+                <p>Camisa de lino - $7.500</p>
+            </div>
+            <div class="producto">
+                <img src="producto6.jpg" alt="Producto 6">
+                <p>Short deportivo - $4.000</p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>© 2025 Flex Indumentaria Tucumán - Todos los derechos reservados</p>
+    </footer>
+</body>
+</html>
